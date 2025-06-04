@@ -9,24 +9,36 @@ var -> mutable
 
 
 You can declare types
+
 `
 val meaningOfLife: Int = 42
 `
+
 Type inference: compiler can infer types not specifically declared
+
 `
 val aBoolean = false
 `
+
 String Inteporlation, add s before string, $ before val name
+
 `
 val anInterpolatedString = s"The Meaning of Life is $meaningOfLife"
 `
 
-`
+You can interpolate expressions:
+
+```
 println(s"2 + 2 = ${2 + 2}")   // prints "2 + 2 = 4"
 
 val x = -1
 println(s"x.abs = ${x.abs}")
-`
+
+println(s"2 + 2 = ${2 + 2}")   // prints "2 + 2 = 4"
+
+val x = -1
+println(s"x.abs = ${x.abs}")
+```
 
 Store 
 `
