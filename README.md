@@ -5,6 +5,7 @@
 Variables:
 
 val -> immutable 
+
 var -> mutable
 
 
@@ -40,7 +41,7 @@ val x = -1
 println(s"x.abs = ${x.abs}")
 ```
 
-Store 
+Store expressions in variables
 `
 val ifExpression = if (meaningOfLife > 43 ) 56 else 999
 `
@@ -61,6 +62,7 @@ def myFunction(x : Int, y: String): String = {
 `
 
 codeblocks in a variable
+
 `
 val aCodeBlock = {
     val aLocalValue =67
@@ -69,11 +71,22 @@ val aCodeBlock = {
 `
 
 Use RECURSION not loops or iteration
+
 `
 def factorial (n: Int): Int = 
     if (n <= 1) 1
     else n * factorial(n - 1)
 `
 
-Unit type = "void" type, no meaningful value
-Type of Side Effects
+Unit type = "void" type, no meaningful value, Need to return something though, so Unit type is like a placeholder when there isn't any.
+
+  // Point #1: in Scala we usually operate with IMMUTABLE values/objects
+  // Any modification to an object must return ANOTHER object
+  /*
+    Benefits:
+    1) works miracles in multithreaded/distributed env
+    2) helps making sense of the code ("reasoning about")
+   */
+  val reversedList = aList.reverse // returns a NEW list
+
+  // Point #2: Scala is closest to the OO ideal
