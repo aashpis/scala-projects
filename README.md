@@ -4,9 +4,8 @@
 
 Variables:
 
-val -> immutable 
-
-var -> mutable
+- val -> immutable 
+- var -> mutable
 
 
 You can declare types
@@ -61,7 +60,7 @@ def myFunction(x : Int, y: String): String = {
 }
 `
 
-codeblocks in a variable
+codeblocks in a variable - last expression result is stored in the val 
 
 `
 val aCodeBlock = {
@@ -80,13 +79,11 @@ def factorial (n: Int): Int =
 
 Unit type = "void" type, no meaningful value, Need to return something though, so Unit type is like a placeholder when there isn't any.
 
-  // Point #1: in Scala we usually operate with IMMUTABLE values/objects
-  // Any modification to an object must return ANOTHER object
-  /*
-    Benefits:
-    1) works miracles in multithreaded/distributed env
-    2) helps making sense of the code ("reasoning about")
-   */
-  val reversedList = aList.reverse // returns a NEW list
+Point #1: in Scala we usually operate with IMMUTABLE values/objects
+- Any modification to an object must return ANOTHER object: `val reversedList = aList.reverse // returns a NEW list`
+- Benefits:
+  * works miracles in multithreaded/distributed env
+  * helps making sense of the code ("reasoning about")
+   
 
-  // Point #2: Scala is closest to the OO ideal
+Point #2: Scala is closest to the OO ideal
