@@ -87,3 +87,7 @@ Point #1: in Scala we usually operate with IMMUTABLE values/objects
    
 
 Point #2: Scala is closest to the OO ideal
+
+**Functions are values** and can be passed as function arguments 
+**Higher Order Functions** are functions that take functions as arguments
+- Variable naming convention: use single letters f,g,h for params
