@@ -1,3 +1,5 @@
+import scala.io.StdIn.readLine
+
 def hello() = println("Hello, World!")
 
 
