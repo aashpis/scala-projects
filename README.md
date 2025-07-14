@@ -101,5 +101,9 @@ Point #2: Scala is closest to the OO ideal
 **Polymorphic Functions:** higher-roder functions that can operate on any datatype
 
 **Partial Function**
+
 **Currying**
+
 **Uncurrying**
+
+**Data Sharing:** reusing parts of data structures instead of copying them. rather than deleting the head of list, you can have another list that points to the list starting at the 2nd index (the new head)
