@@ -106,4 +106,47 @@ Point #2: Scala is closest to the OO ideal
 
 **Uncurrying**
 
-**Data Sharing:** reusing parts of data structures instead of copying them. rather than deleting the head of list, you can have another list that points to the list starting at the 2nd index (the new head)
+**Data Sharing:** reusing parts of data structures instead of copying them. 
+- rather than deleting the head of list, you can have another list that points to the list starting at the 2nd index (the new head)
+    
+**Class constructors**
+- require(condition, message) -> for checking constructor arguments 
+
+`
+class RationalNumber(x: Int, y: Int):
+    require(y > 0, "denominator must be positive")                 
+`
+
+- auxilliary constructor: additional constructors for a class
+`
+class Rational(x: Int, y: Int):
+    def this(x: Int) = this(x, 1)
+...
+Rational(2) > 2/1
+`
+
+**End Markers**
+
+- end className -> use to signify end of class def
+- also can be used in control logic
+
+`
+f x >= 0 then
+...
+else
+...
+end if
+`
+
+**Checking Code**
+- assert(condition) -> checks code itself
+`
+val x = sqrt(y)
+assert(x>=0)  
+`
+
+
+
+
+
+    
