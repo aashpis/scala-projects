@@ -146,7 +146,9 @@ assert(x>=0)
 `
 
 
-
-
-
-    
+**Infix Operators**
+```
+extension (x: Rational)
+    infix def min(that: Rational): Rational = ..
+```
+allows for syntax `x min y` not x.min(y)
