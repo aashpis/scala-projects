@@ -158,3 +158,5 @@ An object and a class can have the same name. This is possible since
 Scala has two global namespaces: one for types and one for values.
 Classes live in the type namespace, whereas objects live in the term
 namespace
+
+Defining parameters in a class constructor automatically creates fields in the class: `class Person(name: String, age: Int)` -> name and age are fields without declaring them in the body
