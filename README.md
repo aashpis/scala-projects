@@ -1,8 +1,8 @@
-# scala-projects
+# Scala Lang Notes
 
-## Language Notes
 
-Variables:
+
+# Variables and Types:
 
 - val -> immutable 
 - var -> mutable
@@ -92,7 +92,10 @@ Point #2: Scala is closest to the OO ideal
 **Higher Order Functions** are functions that take functions as arguments
 - Variable naming convention: use single letters f,g,h for params
 
-**Anonymous Function:** functions defined without a name. A=>B type A returns type B. 
+## Anonymous Function: 
+
+functions defined without a name. A=>B type A returns type B. 
+
 - cube function (x:Int) => x * x * x
 - (x: Int, y: Int) => x + y
 - (x,y) => x + y can be written as _ + _   ->where the types of x and y could be inferred by Scala.
@@ -108,6 +111,9 @@ Point #2: Scala is closest to the OO ideal
 
 **Data Sharing:** reusing parts of data structures instead of copying them. 
 - rather than deleting the head of list, you can have another list that points to the list starting at the 2nd index (the new head)
+
+## Higher Order Functions
+
 
 # Class
 
@@ -322,7 +328,20 @@ val bob = Person("Bob", 54) // Person.apply("Bob", 54)
 
 ```
 
-# Tuples
+# Data Structures
+
+common data structures in Scala
+
+## List
+
+## Maps
+
+## Tuples
 
 Scala tuple combines a fixed number of items together so that they can be passed around as a whole. They are one-indexed. Unlike an array or list, a tuple can hold objects with different types but they are also immutable. 
-Here is an example of a tuple holding an integer, a string, and the console:
+
+## Collections
+
+# Generics
+
+
