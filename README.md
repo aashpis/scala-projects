@@ -132,6 +132,21 @@ class Dog(name: String)
 class Dog(val name: String) 
 ```
 
+all fields and methods are public by default, you can restrict `private` or `protected`  
+
+
+##Traits##
+
+scala version of interfaces - abstract type
+
+**MIXING** 
+single class inheritance with multiple traits 
+need to override inherited methods `override def function()`
+
+```
+class Crocodile extends Animal with Carnivore 
+```
+
 **End Markers**
 
 - end className -> use to signify end of class def
@@ -153,12 +168,21 @@ assert(x>=0)
 ```
 
 
-**Infix Operators**
+**Infix Operators/Notation**
+
+single argument methods can be written as `object method argument`
+```
+aWolf.eat(aDeer)
+aWolf eat aDear
+```
+
 ```scala
 extension (x: Rational)
     infix def min(that: Rational): Rational = ..
 ```
 allows for syntax `x min y` not x.min(y)
+
+
 
 
 An object and a class can have the same name. This is possible since
