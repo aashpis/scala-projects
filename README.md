@@ -53,7 +53,7 @@ val chainedIfExpression =
     else 0
 ```
 
-Functions:
+# Functions:
 `
 def myFunction(x : Int, y: String): String = {
     y + " " + x
@@ -108,7 +108,9 @@ Point #2: Scala is closest to the OO ideal
 
 **Data Sharing:** reusing parts of data structures instead of copying them. 
 - rather than deleting the head of list, you can have another list that points to the list starting at the 2nd index (the new head)
-    
+
+# Class
+
 **Class constructors**
 - require(condition, message) -> for checking constructor arguments 
 
@@ -135,7 +137,7 @@ class Dog(val name: String)
 all fields and methods are public by default, you can restrict `private` or `protected`  
 
 
-##Traits##
+# Traits
 
 scala version of interfaces - abstract type
 
@@ -293,6 +295,32 @@ def privateValuesObjects(res0: String, res1: String) = {
 }
 ```
 
+example 2:
+
+```scala
+
+object Animal {
+    val canLiveIndefinitely = false
+}
+
+val animalsCanLiveForever = Animal.canLiveIndefinitely
+
+```
+## Case Classes
+
+lightweight data structures with some boilerplate
+- sensible equals and hash code
+- serialization
+- companion with apply
+- great for pattern matching
+
+constructed without new
+
+```scala
+case class Person(name: String, age: Int)
+val bob = Person("Bob", 54) // Person.apply("Bob", 54)
+
+```
 
 # Tuples
 
