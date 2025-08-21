@@ -125,6 +125,13 @@ class Rational(x: Int, y: Int):
 Rational(2) > 2/1
 ```
 
+constructor arguments are NOT fields - need to put val before arg
+```scala
+class Dog(name: String)
+- vs -
+class Dog(val name: String) 
+```
+
 **End Markers**
 
 - end className -> use to signify end of class def
