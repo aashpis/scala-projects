@@ -144,7 +144,7 @@ single class inheritance with multiple traits
 need to override inherited methods `override def function()`
 
 ```scala
-class Crocodile extends Animal with Carnivore 
+class Crocodile extends Animal with Carnivore with Reptile
 ```
 
 **End Markers**
@@ -230,6 +230,20 @@ def notStaticMethodObjects(res0: Boolean, res1: Boolean) = {
   x eq z should be(res1)
 }
 ```
+
+Singletons can be called like a functions with apply() method
+
+```scala
+object MySingleton {
+    val myValue= 53278
+    def myMethod(): Int = 5327
+    def apply(x: Int): Int = x + 1
+
+MySingleton(65) // equilvalent to MySingleton.apply(65)
+
+
+```
+
 
 ---
 
