@@ -143,7 +143,7 @@ scala version of interfaces - abstract type
 single class inheritance with multiple traits 
 need to override inherited methods `override def function()`
 
-```
+```scala
 class Crocodile extends Animal with Carnivore 
 ```
 
@@ -171,7 +171,7 @@ assert(x>=0)
 **Infix Operators/Notation**
 
 single argument methods can be written as `object method argument`
-```
+```scala
 aWolf.eat(aDeer)
 aWolf eat aDear
 ```
