@@ -1,6 +1,7 @@
 # Scala Lang Notes
 
-
+**use IMMUTABLE types**
+any modification to a object returns another object - avoid mutating objects
 
 # Variables and Types:
 
@@ -19,6 +20,13 @@ Type inference: compiler can infer types not specifically declared
 `
 val aBoolean = false
 `
+
+## Strings
+
+### Common Methods and Operations
+-
+-
+-
 
 String Inteporlation, add s before string, $ before val name
 
