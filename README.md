@@ -53,6 +53,20 @@ val chainedIfExpression =
     else 0
 ```
 
+## Generics
+
+declare generic types:
+
+```scala
+abstract class myList[T] {
+    def head T
+    def tail: myList[T]
+}
+
+val aList: myList[Int] = List(1, 2, 3)
+val stringList = List("this" , "is" , "scala")
+```
+
 # Functions:
 `
 def myFunction(x : Int, y: String): String = {
